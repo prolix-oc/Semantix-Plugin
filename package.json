@@ -1,7 +1,7 @@
 {
-  "name": "worldinfo-vectorizer-backend",
-  "version": "1.0.0",
-  "description": "Backend plugin for the SillyTavern World Info Vectorizer extension. Handles world book processing, vectorization, storage, search, and reranking.",
+  "name": "semantix-plugin",
+  "version": "0.1.0",
+  "description": "Backend plugin for the SillyTavern Semantix extension. Handles world book processing, vectorization, storage, search, and reranking.",
   "main": "dist/plugin.js",
   "type": "commonjs",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SillyTavern/Plugin-WebpackTemplate.git"
+    "url": "git+https://github.com/prolix-oc/Semantix-Plugin.git"
   },
-  "author": "Your Name",
-  "license": "AGPL-3.0-or-later",
+  "author": "Prolix OCs",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/SillyTavern/Plugin-WebpackTemplate/issues"
+    "url": "https://github.com/prolix-oc/Semantix-Plugin"
   },
-  "homepage": "https://github.com/SillyTavern/Plugin-WebpackTemplate#readme",
+  "homepage": "https://github.com/prolix-oc/Semantix-Plugin#readme",
   "devDependencies": {
     "@eslint/js": "^9.0.0",
     "@types/express": "^4.17.21",
