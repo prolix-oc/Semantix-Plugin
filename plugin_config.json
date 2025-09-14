@@ -1,0 +1,51 @@
+// Default plugin configuration
+{
+    "defaultProvider": "bananabread",
+    "defaultChunkSize": 450,
+    "defaultOverlapSize": 50,
+    "embeddingProviders": {
+        "ollama": {
+            "baseUrl": "http://localhost:11434",
+            "embeddingEndpoint": "/api/embeddings",
+            "modelName": "mxbai-embed-large-v1",
+            "headers": {},
+            "defaultParams": {}
+        },
+        "llamacpp": {
+            "baseUrl": "http://localhost:8080",
+            "embeddingEndpoint": "/embedding",
+            "modelName": "mixedbread-ai/mxbai-embed-large-v1",
+            "headers": {},
+            "defaultParams": {
+                "normalize": true,
+                "truncate": true
+            }
+        },
+        "openai": {
+            "baseUrl": "https://api.openai.com/v1",
+            "embeddingEndpoint": "/embeddings",
+            "apiKey": "YOUR_OPENAI_API_KEY",
+            "modelName": "text-embedding-ada-002",
+            "headers": {},
+            "defaultParams": {}
+        },
+        "bananabread": {
+            "baseUrl": "http://localhost:8008",
+            "embeddingEndpoint": "/embedding",
+            "modelName": "mixedbread-ai/mxbai-embed-large-v1",
+            "headers": {},
+            "defaultParams": {
+                "normalize": true,
+                "truncate": true
+            }
+        },
+        "custom": {
+            "baseUrl": "http://your-custom-endpoint.com",
+            "embeddingEndpoint": "/your-embedding-path",
+            "apiKey": "YOUR_CUSTOM_API_KEY",
+            "modelName": "your-model-name",
+            "headers": {},
+            "defaultParams": {}
+        }
+    }
+}
